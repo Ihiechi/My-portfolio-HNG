@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HNG Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+       <div class="header">
+        <div>
+            <h1 data-testid="slackDisplayName">Hechy</h1>
+        </div>
+        <ul>
+            <li><a href="#goals">My Goals</a></li>
+            <li><a href="#useful-links">Useful Links</a></li>
+            <li><a href="#about-me">About me</a></li>
+        </ul>
+       </div>
+      <div id ="about-me">
+        <h1>About me</h1>
+        <div class="about">
+            <div class="about-details">
+                <h4>Hechy is a Tech Enthusiast who transitioned into the dynamic world of web development from a Human Resource background</h4>
+                <p data-testid="slackEmail">ihechibethel5@gmail.com</p>
+                <p data-testid="currentDay" >Current day: <span id="days"></span><p>
+                <p data-testid="currentTimeUTC">Current UTC time:<span id="hours"></span><span id="minutes"></span><span id="seconds"></span></p>
+            </div>
+            <div class="image">
+                <img src="./me.jpg" data-testid="slackProfilePicture" alt="">
+            </div>
+        </div>
+      </div>
+        <div id="goals">
+            <h1>My Goals</h1>
+            <p>To become more comforatble with React framework</p>
+            <p>To be employed as a Web developer by a reputable organisation</p>
+            <p>To inspire people from any career choice, age and tribe that wants to pursue a career in Tech by telling them my story</p>
+            <p>To become a household name in the Tech industry</p>
+        </div>
+        <div id="useful-links">
+            <a href="https://hng.tech/learn" data-testid="hngLink" target="_blank">HNG Learn</a>
+            <a href="https://keyword.dog/" data-testid="keywordLink" target="_blank">Keyword Link</a>
+            <a href="https://scrapeanyweb.site/" data-testid="scrapeanywebLink" target="_blank">Scrape any Web</a>
+            <a href="">Github</a> 
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

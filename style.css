@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(32, 30, 30);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.header h1{
+   text-decoration: none;
+   color: blue;
+   font-size: 30px;  
+   margin-left: 30px;
+}
+.header ul{
+    display: inline-flex;
+   
+}
+.header ul li{
+    margin-right: 15px;
+    list-style: none;   
+}
+.header ul li a{
+   text-decoration: none;
+   color: blue; 
+   font-size: 20px;
+}
+#about-me{
+    padding: 30px;
+}
+#about-me h1{
+    color: white;
+    margin-top: 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    color:  white; 
+    font-size: 20px;
+}
+.about-details{
+    margin-top: 100px;
+ 
+}
+.about h4{
+    max-width: 80%;
+    text-align: justify;
+    line-height: 35px;
+}
+.about img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+.about .image{
+    height: 400px;
+    width: 400px;
+    margin-top: 40px;
+}
+.about .about-details p{
+    margin-top: 20px;
+}
+#goals{
+    text-align: justify;
+    line-height: 35px;
+    color:  white; 
+    margin-left: 30px;
+}
+#useful-links{
+    text-align: center;
+    padding: 10px;
+}
+#useful-links a{
+    color: blue;
+   cursor: pointer;
+}
+/* Tablets and smaller desktops (1024px and up) */
+@media (max-width: 1024px) {
+    .header h1 {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    .header ul li a {
+        font-size: 18px;
+    }
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .image, .about-details {
+        width: 80%;
+        text-align: center;
+    }
+    .about .image {
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+    }
+    #goals {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Mobile phones (768px and up) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header h1 {
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .header ul li a {
+        font-size: 16px;
+    }
+    #about-me {
+        padding: 20px;
+    }
+    .about-details {
+        margin-top: 50px;
+    }
+    .about h4 {
+        max-width: 100%;
+        text-align: center;
+        line-height: 30px;
+    }
+    .about .image {
+        height: 200px;
+        width: 200px;
+    }
+    #goals {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Small mobile phones (375px and up) */
+@media (max-width: 375px) {
+    .header h1 {
+        font-size: 18px;
+    }
+    .header ul li a {
+        font-size: 14px;
+    }
+    .about .image {
+        height: 150px;
+        width: 150px;
+    }
+    .about h4 {
+        line-height: 25px;
+    }
+}
